@@ -25,7 +25,7 @@ queries for insights.
 
 <b>3.</b> ```data_uploader.py``` - The `DataUploader` class is responsible for uploading data to an Amazon S3 (Simple Storage Service) bucket. 
 
-<b>4.</b> ```main.py``` - The `main.py` script is the core component of the application. This script is responsible for orchestrating the process of collecting football events data from the Football API and uploading it to the S3 using the `DataUploader` class
+<b>4.</b> ```main.py``` - The `main.py` script is the core component of the application. This script is responsible for orchestrating the process of collecting football events data from the Football API via `DataRequester` class and uploading it to the S3 using the `DataUploader` class
 
 #### 2.2 LOAD 
 
