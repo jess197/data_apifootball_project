@@ -12,7 +12,9 @@ queries for insights.
 
 ![Project Architecture](docs/img/api_football.png)
 
-#### EXTRACT 
+### 2. SOLUTION
+
+#### 2.1 EXTRACT 
 <p> It's a batch architecture, my aproach was developing 4 python scripts to take care of ELT:</p>
 
 <b>1.</b> ```api_football.py``` - This Python script contains a class, `APIFootball`, designed to simplify the process of connecting to the Football API. The class allows you to perform various API actions by providing the action name and query string.
@@ -25,7 +27,7 @@ queries for insights.
 
 <b>4.</b> ```main.py``` - The `main.py` script is the core component of the application. This script is responsible for orchestrating the process of collecting football events data from the Football API and uploading it to the S3 using the `DataUploader` class
 
-#### LOAD 
+#### 2.2 LOAD 
 
  ##### SNOWFLAKE
  <p> Created a free account in Snowflake to exploration, my option was the Enterprise because it have more resources. </p> 
@@ -44,7 +46,7 @@ queries for insights.
     - <p>It is necessary to create the entire context for the raw table that will be used to receive the data from the json and the copy into is used to load the table.</p>
 
 
-#### TRANSFORM
+#### 2.3 TRANSFORM
 
 ##### DBT 
   - <p> Created a free account in dbt and linked it to Snowflake. I utilized the dbt cloud and tried to follow best practices according to the dbt manifesto</p>
@@ -57,10 +59,10 @@ queries for insights.
      
      [Models](./models/)</p>
 
-#### TO .CSV 
+#### 2.4 TO .CSV 
 ```convert_to_csv.py``` - Is a Python script designed to extract data from a Snowflake database and export it to CSV files. This script utilizes the Pandas library to fetch data from Snowflake and convert it into CSV format. 
 
-### 4. TECH STACK 
+### 3. TECH STACK 
 - Python
 - Docker
 - Snowflake Datawarehouse:
