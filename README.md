@@ -63,17 +63,7 @@ queries for insights.
 ```convert_to_csv.py``` - Is a Python script designed to extract data from a Snowflake database and export it to CSV files. This script utilizes the Pandas library to fetch data from Snowflake and convert it into CSV format. 
 
 ### 3. TECH STACK 
-- Python
-- Docker
-- Snowflake Datawarehouse:
-  - Copy into
-  - External stage
-  - Storage Integration
-  - File format 
-- AWS: 
-   - S3
-   - IAM
-- dbt
+<img src="./docs/img/aws.png" alt="aws" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/dbt.png" alt="dbt" style="vertical-align:top; margin:4px; height:40px; width:100px"><img src="./docs/img/docker.png" alt="docker" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/snowflake.png" alt="snowflake" style="vertical-align:top; margin:4px; height:40px; width:40px">
 
 
 
