@@ -18,7 +18,7 @@ queries for insights.
 <p> It's a batch architecture, my aproach was developing 4 python scripts to take care of ELT:</p>
 
 <b>1.</b> ```api_football.py``` - This Python script contains a class, `APIFootball`, designed to simplify the process of connecting to the Football API. The class allows you to perform various API actions by providing the action name and query string.
-<b>1.1 - </b> To use this class, you need to set your Football API key as an environment variable named `API_KEY`. You can obtain an API key by signing up on the Football API website.
+- To use this class, you need to set your Football API key as an environment variable named `API_KEY`. You can obtain an API key by signing up on the Football API website.
 
 
 <b>2.</b> ```data_requester.py``` - The `DataRequester` class is designed to simplify the process of requesting football events data from the Football API using the `APIFootball`.
