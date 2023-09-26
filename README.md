@@ -6,6 +6,15 @@
 particularly in data modeling and querying. Your task involves consuming Football (Soccer)
 data from an API, storing it within a database of your preference, and crafting analytical
 queries for insights.
+
+ The league must be Premier League at Season 2022/2023.
+
+ Answering the questions: 
+
+1. Final League Table (query_a) 
+2. Display all teams sorted by Away goals scored. (query_b) 
+3. Top 5 Referees with Most Cards (query_c) 
+4. Top 3 Goal Scorers by Match Round 14 (query_d) 
 </p>
 
 ### 1. DATA ARCHITECTURE
@@ -64,7 +73,13 @@ queries for insights.
 
 <b> The querys results are here: </b> [Querys](./data_csv/csv/)
 
-### 3. TECH STACK 
+### 3. PROBLEMS
+<p> 1. I found some inconsistencies while answering the "Top 5 Referees with Most Cards" topic, which in the API some coaches are with red or yellow cards but in
+ the official websites like premier legue and transfermarkt don't count it. 
+ 2. Some matches in the API had some problem and are without data.
+</p>
+
+### 4. TECH STACK 
 <img src="./docs/img/aws.png" alt="aws" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/dbt.png" alt="dbt" style="vertical-align:top; margin:4px; height:40px; width:100px"><img src="./docs/img/docker.png" alt="docker" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="./docs/img/snowflake.png" alt="snowflake" style="vertical-align:top; margin:4px; height:40px; width:40px">
 
 
